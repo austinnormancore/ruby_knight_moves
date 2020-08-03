@@ -69,10 +69,7 @@ class Move
   	end
 
   	history.unshift(start)
-
-  	output = "Got there in #{(history.length - 1)} moves. Path: "
-  	puts output
-
+  	puts "Got there in #{(history.length - 1)} moves. Path: "
   	history.each do |move|
   		puts move.to_s
   	end
